@@ -6,6 +6,8 @@ header {
 	max-height: 45px;
 	text-align: center;
 	position: fixed;
+	width: 100%;
+	z-index: 9999;
 }
 
 span .top-bar h1 {
