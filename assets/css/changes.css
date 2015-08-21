@@ -1,6 +1,6 @@
 /* My personal CSS */
 
-header {
+#floating-bar {
 	display: block;
 	background-color: #afafaf;
 	opacity: 0.4;
@@ -9,6 +9,11 @@ header {
 	position: fixed;
 	width: 100%;
 	z-index: 9997;
+}
+
+.ontop {
+	position: relative;
+	top: 15px;
 }
 
 span .top-bar h1 {
