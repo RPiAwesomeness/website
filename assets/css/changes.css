@@ -8,12 +8,6 @@ header {
 	text-align: center;
 	position: fixed;
 	width: 100%;
-	z-index: 9997;
-}
-
-.ontop {
-	position: relative;
-	top: 4.7em;
 	z-index: 9999;
 }
 
