@@ -32,6 +32,10 @@ span .downArrow {
 	height: auto;
 }
 
-.white {
+.light {
 	color: #e3e3e3;
+}
+
+header p .light {
+	color: #eee;
 }
