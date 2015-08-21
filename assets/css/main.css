@@ -10,8 +10,16 @@
 /* My personal CSS */
 div #floating-header {
 	display: block;
-	background-color: rgba(#468fd2, 0.6);
-	max-height: 50px;
+	background-color: #468fd2;
+	max-height: 45px;
+}
+
+span .top-bar {
+	text-align: center;
+}
+
+span .top-bar h1 {
+	padding-top: 15px;
 }
 
 span .move {
