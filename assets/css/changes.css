@@ -1,13 +1,11 @@
 /* My personal CSS */
 
-div #floating-header {
+header {
 	display: block;
 	background-color: red;
 	max-height: 45px;
-}
-
-span .top-bar {
 	text-align: center;
+	position: fixed;
 }
 
 span .top-bar h1 {
