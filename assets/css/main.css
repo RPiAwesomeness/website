@@ -14,10 +14,10 @@
 }
 
 span .downArrow {
-	position: relative;
-	top: 17px;
-	left: 17px;
+	position: absolute;
+	top: 0; left: 0; right: 0; 
 	display: block;
+
 }
 
 /* Reset */
