@@ -1,6 +1,6 @@
 /* My personal CSS */
 
-header {
+header .top-bar {
 	display: block;
 	background-color: #afafaf;
 	/*opacity: 0.6;*/
