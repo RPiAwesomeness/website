@@ -32,12 +32,12 @@ span .downArrow {
 	height: auto;
 }
 
-.light {
+/*.light {
 	color: #e3e3e3;
 	z-index: 9998;
 }
 
-header p .light {
+p .light {
 	color: white;
 	z-index: 9999;
-}
+}*/
