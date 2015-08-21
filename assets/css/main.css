@@ -10,7 +10,7 @@
 /* My personal CSS */
 div #floating-header {
 	display: block;
-	background-color: #468fd2;
+	background-color: red;
 	max-height: 45px;
 }
 
