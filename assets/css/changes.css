@@ -11,7 +11,7 @@ section {
 	z-index: 9999;
 }
 
-header .light {
+.light {
 	color: #eee;
 	position: relative;
 	top: 2em;
