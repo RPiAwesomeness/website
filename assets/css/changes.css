@@ -38,6 +38,6 @@ span .downArrow {
 }
 
 header p .light {
-	color: #000000;
-	opacity 1.0;
+	color: #eee;
+	opacity: 1.0;
 }
