@@ -8,7 +8,7 @@ header {
 	text-align: center;
 	position: fixed;
 	width: 100%;
-	z-index: 9998;
+	z-index: 9997;
 }
 
 span .top-bar h1 {
@@ -34,6 +34,7 @@ span .downArrow {
 
 .light {
 	color: #e3e3e3;
+	z-index: 9998;
 }
 
 header p .light {
