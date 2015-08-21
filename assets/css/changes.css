@@ -1,6 +1,6 @@
 /* My personal CSS */
 
-span .header {
+header {
 	display: block;
 	background-color: #afafaf;
 	opacity: 0.4;
