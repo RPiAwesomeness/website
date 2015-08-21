@@ -34,8 +34,10 @@ span .downArrow {
 
 .light {
 	color: #e3e3e3;
+	z-index: 9998;
 }
 
 p .light {
 	color: white;
+	z-index: 9999;
 }
