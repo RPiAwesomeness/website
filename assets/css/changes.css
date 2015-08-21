@@ -14,6 +14,7 @@ header {
 .ontop {
 	position: relative;
 	top: 4.7em;
+	z-index: 9999;
 }
 
 span .top-bar h1 {
