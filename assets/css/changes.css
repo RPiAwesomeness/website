@@ -3,7 +3,7 @@
 section {
 	display: block;
 	background-color: #afafaf;
-	opacity: 0.6;
+	/*opacity: 0.4;*/
 	max-height: 60px;
 	text-align: center;
 	position: fixed;
@@ -13,6 +13,8 @@ section {
 
 header .light {
 	color: #eee;
+	position: relative;
+	top: 2em;
 }
 
 span .top-bar h1 {
