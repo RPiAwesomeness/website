@@ -12,15 +12,6 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
-		<script>
-		function testFunction() {
-			$('#scrollDown').click(function() {
-	  			$.scrollTo('#middle', '5sec');
-			});
-		}
-		</script>
 	</head>
 	<body>
 
@@ -281,11 +272,20 @@
 			</div>
 
 		<!-- Scripts -->
-			<!-- <script src="assets/js/jquery.min.js"></script> -->
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollTo.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
 
+		<script>
+			// Runs after the DOM is ready
+			$(function() {
+				$('#scrollDown').click(function() {
+		  			$.scrollTo('#middle', 1200);
+				});
+			});
+		</script>
 	</body>
 </html>
