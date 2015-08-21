@@ -17,7 +17,7 @@
 		<script>
 		function testFunction() {
 			$('#scrollDown').click(function() {
-	  			$.scrollTo('#middle', 'slow');
+	  			$.scrollTo('#middle', '5sec');
 			});
 		}
 		</script>
@@ -32,15 +32,15 @@
 				<p>Whatever you want to call it.</p>
 				<br><br>
 				<span class="logo icon move" id="scrollDown" onclick="testFunction()">
-					<!--<img src="images/down.svg" alt="Down" class="downArrow" height="64" width="64" />-->
+					<img src="images/down.svg" alt="Down" class="downArrow" height="64" width="64" />
 				</span>
 			</div>
 
 		<!-- Main -->
 			<div id="main">
 
-				<header class="major container">
-					<h2 id="middle">This is my homepage where you can
+				<header class="major container" id="middle">
+					<h2>This is my homepage where you can
 					<br>see a few of my projects.</h2>
 
 					<p>Like my <a href="https://github.com/RPiAwesomeness/BeamBot" title="Click here to look at the code!">Beam.pro chatbot - PyBot!</a></p>
@@ -281,7 +281,7 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<!-- <script src="assets/js/jquery.min.js"></script> -->
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
