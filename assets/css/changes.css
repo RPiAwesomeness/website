@@ -1,6 +1,6 @@
 /* My personal CSS */
 
-header {
+section {
 	display: block;
 	background-color: #afafaf;
 	opacity: 0.4;
@@ -13,6 +13,8 @@ header {
 
 header .light {
 	color: #eee;
+	position: relative;
+	top: 3em;
 }
 
 span .top-bar h1 {
