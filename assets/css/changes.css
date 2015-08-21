@@ -1,0 +1,32 @@
+/* My personal CSS */
+
+div #floating-header {
+	display: block;
+	background-color: red;
+	max-height: 45px;
+}
+
+span .top-bar {
+	text-align: center;
+}
+
+span .top-bar h1 {
+	padding-top: 15px;
+}
+
+span .move {
+	display: block;
+}
+
+span .downArrow {
+	display: inline-block;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	padding-bottom: 5px;
+	max-height: 70%;
+	max-width: 70%;
+	width: auto;
+	height: auto;
+}
