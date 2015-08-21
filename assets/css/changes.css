@@ -11,6 +11,10 @@ header {
 	z-index: 9999;
 }
 
+header .light {
+	color: #eee;
+}
+
 span .top-bar h1 {
 	padding-top: 15px;
 }
