@@ -1,0 +1,77 @@
+body {
+    background-color: #050b13;
+    font-family: 'Fira Code', monospace;
+    padding: 20px;
+    color: rgb(240, 242, 255);
+    /* font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif; */
+}
+
+#page-header {
+    font-size: 18pt;
+    color: #40FF40;
+    text-align: left;
+}
+
+#page-footer {
+    text-align: center;
+    width: 100%;
+}
+
+pre code {
+    background-color: #050b13;
+
+    display: inline-block;
+    padding: 20px 40px 20px 40px;
+    
+    font-family: 'Fira Code', monospace;
+    font-size: 11pt;
+    white-space: pre-wrap;
+
+    transition: background .6s ease-in;
+}
+
+pre code:hover {
+    background-color: #0a111d;
+    transition: background .6s ease-in;
+}
+
+/* Social links */
+
+a.social {
+    color: inherit;
+    transition: color .4s ease-out;
+}
+
+a.social:visited {
+    color: inherit;
+}
+
+#github:hover {
+    color: #6f42c1;
+}
+
+#gitlab:hover {
+    color: #fc6d26;
+}
+
+#twitter:hover {
+    color: #1da1f2;
+}
+
+/* Give some icon padding when in a social link*/
+a.social .la {
+    margin-right: 10px;
+}
+
+/* Fancy animaty stuff, only blink 10 times to avoid being annoying */
+.blink {
+    animation: blink-anim 1.3s steps(5, start) 10;
+    -webkit-animation: blink-anim 1.3s steps(5, start) 10;
+}
+
+@keyframes blink-anim {
+    to {
+        visibility: hidden;
+    }
+}
