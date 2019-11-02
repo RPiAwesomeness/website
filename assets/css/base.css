@@ -1,5 +1,7 @@
+html,
 body {
-    background-color: #050b13;
+    /* background-color: #050b13; -- dark blue, for reference*/
+    background-color: #181818;
     font-family: 'Fira Code', monospace;
     padding: 20px;
     color: rgb(240, 242, 255);
@@ -7,22 +9,39 @@ body {
     font-family: 'Rubik Mono One', sans-serif; */
 }
 
+a {
+    color: inherit;
+    transition: color .4s ease-out;
+}
+
+a:visited {
+    color: inherit;
+}
+
 #page-header {
     font-size: 18pt;
     color: #40FF40;
     text-align: left;
+    vertical-align: middle;
 }
 
 #page-footer {
+    margin-top: 20px;
     text-align: center;
     width: 100%;
 }
 
+#avatar {
+    max-width: 48px;
+    border-radius: 50px;
+}
+
 pre code {
-    background-color: #050b13;
+    background-color: inherit;
 
     display: inline-block;
     padding: 20px 40px 20px 40px;
+    border-radius: 7px;
     
     font-family: 'Fira Code', monospace;
     font-size: 11pt;
@@ -32,8 +51,50 @@ pre code {
 }
 
 pre code:hover {
-    background-color: #0a111d;
+    background-color: #050b13;
     transition: background .6s ease-in;
+}
+
+#main div {
+    padding-left: 20px;
+}
+
+hr.section-header {
+    display: block;
+    max-width: 80px;
+    margin-top: -15px;
+    margin-left: 20px;
+    border: 1px solid;
+    color: inherit;
+    border-radius: 1px;
+}
+
+.under {
+    border-bottom: 3px solid;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+/* Side-by-side columns */
+
+.container {
+    display: flex;
+}
+
+.container > div {
+    background-color: #050b13;
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container > div > h3 {
+    text-align: center;
+}
+
+.cactusdev:hover {
+    color: #83bf4f;
+    transition: color .4s ease-out;
 }
 
 /* Social links */
@@ -47,15 +108,15 @@ a.social:visited {
     color: inherit;
 }
 
-#github:hover {
+.github-purple:hover {
     color: #6f42c1;
 }
 
-#gitlab:hover {
+.gitlab-orange:hover {
     color: #fc6d26;
 }
 
-#twitter:hover {
+.twitter-blue:hover {
     color: #1da1f2;
 }
 
