@@ -16,6 +16,7 @@ a {
 
 a:visited {
     color: inherit;
+    transition: color .4s ease-out;
 }
 
 #page-header {
@@ -98,15 +99,6 @@ hr.section-header {
 }
 
 /* Social links */
-
-a.social {
-    color: inherit;
-    transition: color .4s ease-out;
-}
-
-a.social:visited {
-    color: inherit;
-}
 
 .github-purple:hover {
     color: #6f42c1;
