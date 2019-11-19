@@ -5,6 +5,14 @@ body {
     font-family: 'Fira Code', monospace;
     padding: 20px;
     color: rgb(240, 242, 255);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15vh 75vh 10vh;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
     /* font-family: 'Oswald', sans-serif;
     font-family: 'Rubik Mono One', sans-serif; */
 }
@@ -20,21 +28,25 @@ a:visited {
 }
 
 #page-header {
-    font-size: 18pt;
-    color: #40FF40;
     text-align: left;
     vertical-align: middle;
+    grid-area: header;
+}
+
+#page-header > h2 {
+    color: #40FF40;
 }
 
 #page-footer {
+    grid-area: footer;
     margin-top: 20px;
+    margin-bottom: 40px;
     text-align: center;
     width: 100%;
 }
 
-#avatar {
-    max-width: 48px;
-    border-radius: 50px;
+#page-content {
+    grid-area: main;
 }
 
 pre code {
@@ -85,8 +97,9 @@ hr.section-header {
 .container > div {
     background-color: #050b13;
     flex: 1;
-    margin-left: 20px;
+    padding: 0 20px 0 20px;
     margin-right: 20px;
+    border-radius: 5px;
 }
 
 .container > div > h3 {

@@ -15,84 +15,91 @@
 </head>
 
 <body>
-    <header id="page-header">Nate Olander<span id="cursor" class="blink">&nbsp;&block;</span></header>
-    <div id="main">
-        <p>Welcome to my site!</p>
-        <p>It's kinda ... under construction <span class="la la-hard-hat"></span></p>
+    <section id="page">
+        <header id="page-header">
+            <h2>Nate Olander<span id="cursor" class="blink">&nbsp;&block;</span></h2>
+            <p>Welcome to my site!</p>
+        </header>
+        <main id="page-content">
+            <p>It's kinda ... under construction <span class="la la-hard-hat"></span></p>
 
-        <div class="container">
-            <div>
-                <h3><a href="https://gitlab.com/RPiAwesomeness/libndef" class="gitlab-orange">ndef-lite</a></h3>
-                <p>libndef is an NDEF Message parsing library written in pure C++14</p>
+            <div class="container">
+                <div>
+                    <h3><a href="https://gitlab.com/RPiAwesomeness/libndef" class="gitlab-orange">ndef-lite</a></h3>
+                    <p>libndef is an NDEF Message parsing library written in pure C++14</p>
+                </div>
+                <div>
+                    <h3><a href="https://github.com/RPiAwesomeness/CactusDev" class="cactusdev">CactusDev</a></h3>
+                    <p>A micro-service-based chat bot for Microsoft's Mixer streaming service.</p>
+                    <h4>Involvement</h4>
+                    <ul>
+                        <li>
+                            Primary developer on original version of Python-based
+                            <a href="https://github.com/CactusDev/CactusBot" class="cactusdev">CactusBot</a>
+                        </li>
+                        <li>Primary developer on CactusDev REST API that CactusBot utilizes.</li>
+                        <li>
+                            Primary developer on the Golang rewrite of the from
+                            <a href="https://github.com/CactusDev/CactusAPI" class="cactusdev">CactusAPI</a> to
+                            <a href="https://github.com/CactusDev/Xerophi" class="cactusdev">Xerophi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3><a href="https://gitlab.com/tinyrender" class="gitlab-orange">tinyrender</a></h3>
+                    <p>Simple OpenGL-esque software rendering engine</p>
+                    <p>Created to experiment with computer-generated imagery</p>
+                </div>
             </div>
-            <div>
-                <h3><a href="https://github.com/RPiAwesomeness/CactusDev" class="cactusdev">CactusDev</a></h3>
-                <p>A micro-service-based chat bot for Microsoft's Mixer streaming service.</p>
-                <h4>Involvement</h4>
+
+            <h3>Example Code</h3>
+            <hr class="section-header" style="max-width: 135px;">
+            <div id="code-example">
+                <pre>
+    <code>std::vector<int> face = model.face(i);
+
+    for (size_t j = 0; j < 3; j++) {
+        Vec3f v0 = model.vert(face[j]);
+        Vec3f v1 = model.vert(face[(j + 1) % 3]);
+        int x0 = (v0.x + 1.0) * width / 2.0;
+        int y0 = (v0.y + 1.0) * height / 2.0;
+        int x1 = (v1.x + 1.0) * width / 2.0;
+        int y1 = (v1.y + 1.0) * height / 2.0;
+        line(x0, y0, x1, y1, image, WHITE);
+    }</code>
+            </pre>
+            </div>
+
+            <h3>About me</h3>
+            <hr class="section-header" style="max-width: 85px;">
+            <div id="about">
+                <p>I'm an aspiring software developer interested in exploring new fields and being involved in the next
+                    big
+                    thing!</p>
+                <p>I am particularly interested in the areas of Machine Learning/Artificial Intelligence, especially
+                    when
+                    applied to the field of automated vehicles.</p>
+
+                <h4>Hobbies</h4>
                 <ul>
-                    <li>
-                        Primary developer on original version of Python-based <a
-                            href="https://github.com/CactusDev/CactusBot" class="cactusdev">CactusBot</a>
-                    </li>
-                    <li>Primary developer on CactusDev REST API that CactusBot utilizes.</li>
-                    <li>Primary developer on the Golang rewrite of the from <a
-                            href="https://github.com/CactusDev/CactusAPI" class="cactusdev">CactusAPI</a> to <a
-                            href="https://github.com/CactusDev/Xerophi" class="cactusdev">Xerophi</a></li>
+                    <li>Graphic Design</li>
+                    <li>Content Production</li>
+                    <li>Language Design</li>
                 </ul>
             </div>
-            <div>
-                <h3><a href="https://gitlab.com/tinyrender" class="gitlab-orange">tinyrender</a></h3>
-                <p>Simple OpenGL-esque software rendering engine</p>
-                <p>Created to experiment with computer-generated imagery</p>
+        </main>
+        <footer id="page-footer">
+            <p>You can find me here!</p>
+            <div id="social">
+                <a href="https://github.com/RPiAwesomeness" class="social github-purple" id="github">
+                    <span class="la la-github-alt"></span>/RPiAwesomeness</a>
+                <a href="https://gitlab.com/RPiAwesomeness" class="social gitlab-orange" id="gitlab">
+                    <span class="la la-gitlab"></span>/RPiAwesomeness</a>
+                <a href="https://twitter.com/nateolander" class="social twitter-blue" id="twitter">
+                    <span class="la la-twitter"></span>/nateolander</a>
             </div>
-        </div>
-
-        <h3>Example Code</h3>
-        <hr class="section-header" style="max-width: 135px;">
-        <div id="code-example">
-            <pre>
-<code>std::vector<int> face = model.face(i);
-
-for (size_t j = 0; j < 3; j++) {
-    Vec3f v0 = model.vert(face[j]);
-    Vec3f v1 = model.vert(face[(j + 1) % 3]);
-    int x0 = (v0.x + 1.0) * width / 2.0;
-    int y0 = (v0.y + 1.0) * height / 2.0;
-    int x1 = (v1.x + 1.0) * width / 2.0;
-    int y1 = (v1.y + 1.0) * height / 2.0;
-    line(x0, y0, x1, y1, image, WHITE);
-}</code>
-        </pre>
-        </div>
-
-        <h3>About me</h3>
-        <hr class="section-header" style="max-width: 85px;">
-        <div id="about">
-            <p>I'm an aspiring software developer interested in exploring new fields and being involved in the next big
-                thing!</p>
-            <p>I am particularly interested in the areas of Machine Learning/Artificial Intelligence, especially when
-                applied to the field of automated vehicles.</p>
-
-            <h4>Hobbies</h4>
-            <ul>
-                <li>Graphic Design</li>
-                <li>Content Production</li>
-                <li>Language Design</li>
-            </ul>
-        </div>
-    </div>
-
-    <footer id="page-footer">
-        <p>You can find me here!</p>
-        <div id="social">
-            <a href="https://github.com/RPiAwesomeness" class="social github-purple" id="github">
-                <span class="la la-github-alt"></span>/RPiAwesomeness</a>
-            <a href="https://gitlab.com/RPiAwesomeness" class="social gitlab-orange" id="gitlab">
-                <span class="la la-gitlab"></span>/RPiAwesomeness</a>
-            <a href="https://twitter.com/nateolander" class="social twitter-blue" id="twitter">
-                <span class="la la-twitter"></span>/nateolander</a>
-        </div>
-    </footer>
+        </footer>
+    </section>
 </body>
 
 </html>
