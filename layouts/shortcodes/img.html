@@ -1,0 +1,18 @@
+{{ $img := $.Page.Resources.GetMatch (.Get 0)}}
+{{ $caption := (.Get 1) }}
+{{ $alt := (.Get 2) }}
+
+{{ if and (eq $alt "") (ne $caption "") }}
+{{ $alt = $caption }}
+{{ end }}
+
+{{ if ne $img nil }}
+<figure>
+    <img src="{{ $img.Permalink }}" alt="{{ $alt }}" />
+    {{ if ne "" $caption }}
+    <figcaption>{{ $caption }}</figcaption>
+    {{ end }}
+</figure>
+{{ else }}
+<small>[Looks like this image failed to load. Can you let me know this stuff broke again?]</small>
+{{ end }}
