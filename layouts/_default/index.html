@@ -40,7 +40,7 @@
     <div>
         <p class="post-title">Recent Posts</p>
         <ul>
-            {{ range first 10 .Site.RegularPages }}
+            {{ range first 5 .Site.RegularPages }}
             <li>
                 <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
                 {{ if .Description }}
