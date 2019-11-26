@@ -18,4 +18,4 @@ This post is basically just me saying that I've actually got a blog up and runni
 
 What will this be? Not entirely sure, but I was missing having the ability to blog about random programming things. Soooo with the free .tech domain I got through the Github student pack I was provided with a "little" project to work on (yeah I've sunk a lot of hours into this already...) and a kick in the rear to get writing again. I hope to be able to post about projects as I work on them, like my [tinyrender](https://gitlab.com/RPiAwesomeness/tinyrender) renderer project, and on little things I come across in my studies and at work.
 
-![Indian programmers](random_indian_dude_programming.jpg)
+![Random Indian programmers meme](img/random_indian_dude_programming.jpg)
