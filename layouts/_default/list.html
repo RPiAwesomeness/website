@@ -1,0 +1,38 @@
+{{ define "main" }}
+<main>
+    <article>
+        <header>
+            <h1>{{.Title}}</h1>
+        </header>
+        <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+        {{.Content}}
+    </article>
+    <ul>
+        <!-- Ranges through content/posts/*.md -->
+        {{ range first 10 .Pages }}
+        <article>
+            <!-- Title summary -->
+            <div>
+                <span>
+                    // <a href="{{ .RelPermalink }}"><time>{{ .Date.Format "2006-01-02" }}</time> | {{ .Title }}</a>
+                </span>
+                <summary style="padding-top: 15px;">{{ .Summary }}</summary>
+            </div>
+            <!-- Include Read More link if the summary is truncated -->
+            {{ if .Truncated }}
+            <div>
+                <a href="{{ .RelPermalink }}">Read more...</a>
+            </div>
+            {{ end }}
+            {{ if .Params.tags }}
+            <span class="post-tags" style="padding-top: 5px;">
+                {{ range .Params.tags }}
+                #<a href="{{ (urlize (printf "tags/%s/" .)) | absLangURL }}">{{ . }}</a>&nbsp;
+                {{ end }}
+            </span>
+            {{ end }}
+        </article>
+        {{ end }}
+    </ul>
+</main>
+{{ end }}

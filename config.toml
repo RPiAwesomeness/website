@@ -9,21 +9,22 @@ paginate = 5
   # ["orange", "blue", "red", "green", "pink"]
   themeColor = "blue"
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 4
   # show selector to switch language
   showLanguageSelector = false
   # set theme to full screen width
-  fullWidthTheme = true
+  fullWidthTheme = false
   # center theme with default width
-  centerTheme = false
+  centerTheme = true
   # set a custom favicon (default is a `themeColor` square)
   # favicon = "favicon.ico"
+  custom_css = ["css/main.css"]
 
 [languages]
   [languages.en]
     languageName = "English"
     title = "Nate Olander"
-    subtitle = "Ramblings, musings, and generally misplaced thoughts"
+    subtitle = "Developer"
     keywords = "software coding"
     copyright = "2019 Nathanael Olander"
     menuMore = "Show more"
@@ -31,15 +32,22 @@ paginate = 5
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "Terminal"
+      logoText = "λ:// nateolander"
       logoHomeLink = "/"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+        weight = -100
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts"
+        weight = 10
+      [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
         url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
+        weight = 500
