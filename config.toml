@@ -18,7 +18,7 @@ paginate = 5
   centerTheme = true
   # set a custom favicon (default is a `themeColor` square)
   # favicon = "favicon.ico"
-  custom_css = ["css/main.css"]
+  custom_css = ["css/post.css"]
 
 [languages]
   [languages.en]
