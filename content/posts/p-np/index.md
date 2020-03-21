@@ -20,7 +20,7 @@ Let's change that.
 guess something of exponential size
 - You are unable to confirm that there is no satisfying assignment other than checking all possible inputs
 - NP is biased towards YES answers, so if there is a YES answer it will eventually find it. If you put your guesses at
-the start and verification at theend it is also a verification algorithm. 
+the start and verification at the end it is also a verification algorithm. 
 - NP can be a good thing, because you know that problem X is no harder than NP
 - X is not a member of P unless P = NP, which is extremely rare/lucky
 
