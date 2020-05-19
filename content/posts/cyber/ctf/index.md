@@ -1,6 +1,6 @@
 +++
 title = "My Introduction to Cyber Security"
-date = "18-05-2020"
+date = "2020-05-18"
 author = "vsvn"
 draft = false
 cover = ""

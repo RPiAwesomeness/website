@@ -7,7 +7,7 @@ paginate = 5
   # dir name of your blog content (default is `content/posts`)
   contentTypeName = "posts"
   # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "blue"
+  themeColor = "green"
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 4
   # show selector to switch language
@@ -24,9 +24,9 @@ paginate = 5
   [languages.en]
     languageName = "English"
     title = "Nate Olander"
-    subtitle = "Developer"
-    keywords = "software coding"
-    copyright = "2019 Nathanael Olander"
+    subtitle = "Developer, Cyber Security Student"
+    keywords = "software coding cybersecurity"
+    copyright = "2020 Nathanael Olander"
     menuMore = "Show more"
     readMore = "Read more"
     readOtherPosts = "Read other posts"
@@ -38,16 +38,21 @@ paginate = 5
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "home"
-        name = "Home"
+        name = "home"
         url = "/"
         weight = -100
       [[languages.en.menu.main]]
         identifier = "posts"
-        name = "Posts"
+        name = "posts"
         url = "/posts"
         weight = 10
       [[languages.en.menu.main]]
+        identifier = "cyber"
+        name = "cyber"
+        url = "/posts"
+        weight = 20
+      [[languages.en.menu.main]]
         identifier = "about"
-        name = "About"
+        name = "about"
         url = "/about"
         weight = 500
