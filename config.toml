@@ -38,21 +38,21 @@ paginate = 5
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "home"
-        name = "home"
+        name = "/home"
         url = "/"
         weight = -100
       [[languages.en.menu.main]]
-        identifier = "posts"
-        name = "posts"
-        url = "/posts"
+        identifier = "about"
+        name = "~/about.txt"
+        url = "/about"
         weight = 10
       [[languages.en.menu.main]]
-        identifier = "cyber"
-        name = "cyber"
+        identifier = "posts"
+        name = "~/posts"
         url = "/posts"
         weight = 20
       [[languages.en.menu.main]]
-        identifier = "about"
-        name = "about"
-        url = "/about"
-        weight = 500
+        identifier = "cyber"
+        name = "~/cyber"
+        url = "/tags/cyber"
+        weight = 30
