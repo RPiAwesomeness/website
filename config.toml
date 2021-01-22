@@ -1,4 +1,4 @@
-baseurl = "https://blog.nateolander.tech"
+baseurl = "https://blog.nateolander.com"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
